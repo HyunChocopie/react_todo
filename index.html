@@ -1,0 +1,66 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Todo</title>
+    <style>
+        body{
+            background-color: lightgray;
+            display: block;
+            margin:0;
+        }
+        #root{
+            background-color: white;
+            display: inline-block;
+            position: relative;
+            border-radius: 20px;
+            margin:30px 200px 30px;
+        }
+        #todolist{
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            margin:30px;
+        }
+        #left{
+            position: relative;
+            display: flex;
+            color:rgb(56, 217, 169);
+        }
+        .notchecked{
+            height: 5px;
+            width: 5px;
+            color: rgb(56, 217, 169);
+            border:1px solid rgb(56, 217, 169);
+            border-radius: 30px;
+            padding: 20px;
+            
+        }
+        .checked{
+            height: 5px;
+            width: 5px;
+            color: rgb(56, 217, 169);
+            background-color: rgb(56, 217, 169);
+            border:1px solid rgb(56, 217, 169);
+            border-radius: 30px;
+            padding: 20px;
+            
+        }
+        ul{
+            padding: 0;
+        }
+        li{
+            margin:5px;
+            align-items: center;
+            font-size:30px;
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="root"></div>
+    <script src='./dist/app.js'></script>
+</body>
+
+</html>
